@@ -1,21 +1,21 @@
 
-# 📚 College Event Registration System  
+#  College Event Registration System  
 *A database-driven system for managing college event registrations, enforcing capacity rules, and generating event insights.*
 
-## 📌 Project Overview  
+##  Project Overview  
 The **College Event Registration System** is a relational database project designed to manage student registrations for campus events. It ensures data integrity, enforces event capacity limits, manages waitlists automatically, and provides reporting tools for organizers and administrators.
 
 ---
 
-## 🏗️ Features  
-### ✔️ Core Functionality  
+##  Features  
+###  Core Functionality  
 - Student registration for campus events  
 - Automatic capacity enforcement  
 - Automatic waitlisting when events are full  
 - Organizer–event management  
 - Reporting on attendance, engagement, and event fill rates  
 
-### ✔️ Database Features  
+###  Database Features  
 - Fully normalized relational schema  
 - Primary keys, foreign keys, unique constraints, and check constraints  
 - INSTEAD OF INSERT trigger for capacity enforcement  
@@ -25,7 +25,7 @@ The **College Event Registration System** is a relational database project desig
 
 ---
 
-## 🧩 Database Schema  
+## Database Schema  
 ### **Entities**
 - **STUDENT** – student info (name, email, year)  
 - **ORGANIZER** – event organizers  
@@ -40,7 +40,7 @@ The **College Event Registration System** is a relational database project desig
 
 ---
 
-## 🗂️ Relational Schema (Summary)
+##  Relational Schema (Summary)
 
 | Table | Key Fields | Notes |
 |-------|------------|-------|
@@ -51,7 +51,7 @@ The **College Event Registration System** is a relational database project desig
 
 ---
 
-## 🧪 Sample Data  
+##  Sample Data  
 The project includes sample inserts for:  
 - **12 students**  
 - **6 organizers**  
@@ -76,7 +76,7 @@ This enforces business rules without requiring application logic.
 
 ---
 
-## 🧭 Stored Procedure: `quick_register`  
+##  Stored Procedure: `quick_register`  
 A stored procedure that:  
 - Accepts `student_id` and `event_id`  
 - Checks event capacity  
@@ -88,7 +88,7 @@ Useful for consistent, controlled registration logic.
 
 ---
 
-## 📊 SQL Queries Included  
+##  SQL Queries Included  
 The project includes 5 reporting queries:
 
 1. **List events with registered students**  
@@ -109,7 +109,7 @@ These improve search and join performance across queries.
 
 ---
 
-## 👁️ View: `active_registrations`  
+##  View: `active_registrations`  
 A simplified reporting view showing:  
 - Student name + email  
 - Event title, date, location  
@@ -130,7 +130,7 @@ A simplified reporting view showing:
 
 ---
 
-## 📦 How to Use  
+##  How to Use  
 1. Run all **CREATE TABLE** statements  
 2. Insert sample data  
 3. Add trigger, view, and stored procedure  
